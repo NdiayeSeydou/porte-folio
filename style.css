@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* mettre le commentaire sur l'entierete de ma page avec le selecteur universelle*/
+*{
+    /*supprimer toutes les marges exterieures */
+    margin: 0;
+    /*supprimer toutes les marges interieures */
+    padding: 0;
+    /* prendre un controle total sur la hauteur,largeur,margin et le pading*/
+    box-sizing: border-box;
+    /* la police d'ecriture par defaut qui sera utiliser dans l'ensemble de la page web*/
+    font-family:'roboto', 'sans-serif';
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color:rgb(235, 243, 245);
+}
+nav{
+    background-color:navy;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    color: white; 
+    font-size: larger;
+    overflow: hidden;
+    padding: 2px;
+}
+li{
+    display: flex;
+    float: inline-start;
+}
+li a{
+    padding: 15px;
+    display: block;
+    color: aliceblue;
+    transition: 0,5s ease;
+    font-weight: bold;
+}
+li a:hover{
+    color:blue
+}
+.description{
+display: flex;
+justify-content: space-around;
+padding-top: 100px;
+font-size: large;
+color:black;
+}
+.desc{
+    padding: 80px 40px;
+    top: 0;
+}
+.desc_head1{
+    font-size: 25PX;
+    text-transform: uppercase;
+}
+.desc_head2{
+    margin-top: 10px;
+    font-size: 30px;
+
+}
+.desc_head1 span{
+    color: blue;
+}
+.desc_head2 span{
+    color: blue;
+    position: relative;
+}
+.desc_head2 span:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-left: 3px solid coral;
+    background-color:rgb(235, 243, 245);
+    right:-2px;
+    animation:text 3s infinite backwards steps(10);
+}
+@keyframes text{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 100%;
+    }
+}
+
+.desc p{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.social_media i{
+    margin: 8px;
+    margin-top: 20px;
+    border: 1px solid blue;
+    padding: 10px;
+    border-radius: 50px;
+    transition: .5s ease;
+    cursor: pointer;
+    color: blue;
+}
+.social_media i:hover{
+    background-color: coral;
+    box-shadow: Opx 0px 20px blue;
+}
+.a_btn{
+    margin-top: 50px;
+}
+.btn{
+    padding: 15px 25px 15px 25px;
+    font-size: 20px;
+    background-color: blue;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px blue;
+    transition: .3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+}
+.btn:hover{
+    background: transparent;
+    border: 2px solid coral;
+}
+.image img{
+    border-radius: 90%;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px blue;
+}
+.image {
+   
+    padding: 80px 40px;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 40px;
+    padding-top: 90px;
+    color: #000000;
+
+    }
+.about_desc{
+    margin-left: 50px;
+}
+.about_desc h1  {
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+.about_desc h2{
+    margin: top  10px;
+    text-transform: uppercase;
+}
+.about_desc span{
+    color: blue;
+}
+.about_desc p{
+    margin-top: 10px;
+}
+.about_btn{
+    padding: 15px 25px 15px 25px;
+    font-size: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px coral;
+    transition: .3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.about_photo{
+    border-radius: 19px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px blue;
+    margin-top: 10px;
+    margin: 20px;
+}
+.services_head{
+    margin: 150px;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    margin:10px;
+}
+.services_head span{
+    color: coral;
+    text-transform: uppercase;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+    margin: 10px;
+    color: #000;
+}
+.card_layout{
+    background-color: rgb(60,60,60);
+    padding: 30px;
+    border-radius: 20px;
+    transition: .3s ease;
+}
+.card_layout i{
+    font-size: 30px;
+    color: coral;
+}
+.card_layout h2{
+    font-size: 25px;
+    margin-top: 15px;
+    color: aqua;
+}
+.services_btn{
+    padding: 10px 5px 10px 5px;
+    font-size: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px coral;
+    transition: .3s ease;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+.services_btn:hover{
+    background: transparent;
+    border: 2px solid blue;
+    color:purple;
+}
+.projects_head{
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 80px;
+}
+.projects_head span{
+    color:blue;
+}
+.projets_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projets_card_layout{
+    margin: 5px;
+    position: relative;
+}
+.projets_card_layout h1{
+    opacity: 0;
+    visibility: hidden;
+}
+.projets_card_layout:hover h1{
+    opacity: 1;
+    visibility: visible;
+}
+.projets_desc{
+    width: 430px;
+    position: absolute;
+    box-sizing: border-box;
+    color: blue;
+    padding: 5px;
+    bottom: 0px;
+    text-align: center;
+    transition: .5s ease-out;
+}
+.projets_card_layout:hover .projets_desc{
+    border-image: fill 0 linear-gradient(#0001, coral);
+    height: 200px;
+    bottom: 0px;
+    padding: 60px;
+}
+.conctact_head{
+    margin-top: 150px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    padding-top: 50px;
+    
+}
+.conctact_head h1 span{
+    color: coral;
+}
+#conctat form{
+    margin: 50px;
+}
+.contactez{
+    display: flex;
+    justify-content: center;
+}
+form input, textarea{
+    width: 400px;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgb(59,59,59);
+    font-size: 18px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+form textarea{
+    margin-left: 210px;
+    width: 820px;
+}
+.form_btn{
+    padding: 15px 5px 15px 5px;
+    font-size: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px coral;
+    transition: .3s ease;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 600px;
+}
+.form_btn:hover{
+    background: transparent;
+    border: 2px solid blue;
+    color:purple;
+}
+.footer{
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 20p
+}
